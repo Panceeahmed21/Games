@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+  
+}
+.img-header {
+    width: 40%;
+    max-height: 40vh
+}
+
+.nav-left img {
+    background-position: center center;
+    background-size: cover;
+    width: 20%;
+    max-height: 10vh
+}
+
+body {
+     background-color: #272b30; 
+
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav .navbar {
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    border-radius: 20px;
+}
+
+.nav-item .active {
+    color: #009ad8;
+
+}
+
+.nav-item {
+    transition: all 1s;
+}
+
+.nav-item :hover {
+    color: #009ad8 !important;
+
+
+}
+
+.nav-item .active {
+    color: #009ad8 !important;
+}
+.card-parag {
+    color: #717c8a !important;
+    max-width: 230px;
+    font-size: small;
+
+}
+
+.vipH6{
+    font-size: small;
+    max-width: 145px;
+
+}
+.card .badge-body {
+    background-color: #717c8a;
+cursor: pointer;
+}
+ .card .badge-body:hover{
+ background-color: #0e5fc8; 
+
+ }
+.card{
+    transition: all 1s;
+}
+.card:hover {
+    transform: scale(1.04);
+  background-color: #0e5fc8; 
+cursor: pointer;
+
+}
+.card img{
+    filter: grayscale(1);
+}
+
+.card:hover img {
+    filter: grayscale(0);
+}
+.card-img{
+    width: 90%;
+}
+

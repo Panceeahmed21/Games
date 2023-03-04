@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=PT+Sans+Narrow&family=Poppins:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styleSheet.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="games " id="games" >
+    <div class="img-header">
+      <img src="images/wraper.png" class="img-fluid" alt="">
+      </div>
+      <nav class="mb-5 " >
+        <nav class="navbar navbar-expand-lg text-white  top-0 z-3 col-md-6 col-lg-9" ">
+          <div class="container ">
+      <div class="nav-left  ">
+        <img src="images/logo-sm.png" class="d-inline img-fluid ">
+        <p class="d-inline">GAME REVIEWS</p>
+      </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  navbar-collapse  " id="navbarNavAltMarkup">
+    
+              <ul class="navbar-nav position-absolute end-0 mb-2 mb-lg-0   ">
+                <li class="nav-item " >
+                  <a class="nav-link active px-2 text-white" data-category="mmorpg" aria-current="page" href="#">mmorpg</a>
+                </li>
+                <li class="nav-item " >
+                  <a class="nav-link px-2 text-white" data-category="shooter" href="#">shooter</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" data-category="sailing" href="#">sailing</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white px-2" data-category="permadeath" href="#">permadeath </a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white px-2" data-category="superhero" href="#">superhero </a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link px-2 pe-4 text-white" data-category="pixel" href="#">pixel </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    
+      <div class="container " id="games-content">
+        <div class="row" id="apiData">
+     
+    
+        </div>
+      </div>
+    
+    
+  </section>
+
+ <section class="details  d-none text-white" id="details">
+  <div class="container">
+    <div class="header mb-3 d-flex justify-content-between align-items-center pt-3  px-5">
+      <h2 class="text-white">Details Game</h2>
+      <button class="btn-close btn-close-white" id="btnClose"></button>
+    </div>
+    <div class="row" id="dataOfDetails">
+
+    </div>
+  </div>
+
+
+ </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/main.js"  type="module"></script>
+</body>
+
+</html>
