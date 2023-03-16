@@ -1,92 +1,222 @@
-*{
-    box-sizing: border-box;
-  
-}
-.img-header {
-    width: 40%;
-    max-height: 40vh
-}
+* {
+  box-sizing: border-box;
 
-.nav-left img {
-    background-position: center center;
-    background-size: cover;
-    width: 20%;
-    max-height: 10vh
 }
 
 body {
-     background-color: #272b30; 
+  overflow: hidden;
+}
+
+.loading-page {
+  background-color: #272b30;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.img-header {
+  width: 40%;
+  max-height: 40vh
+}
+
+.nav-left img {
+  background-position: center center;
+  background-size: cover;
+  width: 20%;
+  max-height: 10vh
+}
+
+body {
+  background-color: #272b30;
 
 
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 nav .navbar {
-    background-color: rgb(58, 73, 123) !important;
-    margin-inline: auto;
+  background-color: rgb(58, 73, 123) !important;
+  margin-inline: auto;
 
-    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
-    border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+  border-radius: 20px;
 }
 
 .nav-item .active {
-    color: #009ad8;
+  color: #009ad8;
+
 
 }
 
 .nav-item {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 .nav-item :hover {
-    color: #009ad8 !important;
+  color: #009ad8 !important;
 
 
 }
 
 .nav-item .active {
-    color: #009ad8 !important;
+  color: #009ad8 !important;
 }
+
 .card-parag {
-    color: #717c8a !important;
-    max-width: 230px;
-    font-size: small;
+  color: #717c8a !important;
+  max-width: 230px;
+  font-size: small;
 
 }
 
-.vipH6{
-    font-size: small;
-    max-width: 145px;
+.vipH6 {
+  font-size: small;
+  max-width: 145px;
 
 }
+
 .card .badge-body {
-    background-color: #717c8a;
-cursor: pointer;
+  background-color: #717c8a;
+  cursor: pointer;
 }
- .card .badge-body:hover{
- background-color: #0e5fc8; 
 
- }
-.card{
-    transition: all 1s;
+.card .badge-body:hover {
+  background-color: #0e5fc8;
+
 }
+
+.card {
+  transition: all 1s;
+}
+
 .card:hover {
-    transform: scale(1.04);
-  background-color: #0e5fc8; 
-cursor: pointer;
+  transform: scale(1.04);
+  background-color: #0e5fc8;
+  cursor: pointer;
 
 }
-.card img{
-    filter: grayscale(1);
+
+.card img {
+  filter: grayscale(1);
 }
 
 .card:hover img {
-    filter: grayscale(0);
-}
-.card-img{
-    width: 90%;
+  filter: grayscale(0);
 }
 
+.card-img {
+  width: 90%;
+}
